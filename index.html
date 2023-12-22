@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab7a</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <h2>U.S.-based TV shows on Netflix released in 2020 along with their cast.</h2>
+        <div id="legend">
+            <svg height="50">
+                <circle cx="20" cy="20" r="9" fill="#32cc6f"></circle>
+                <text x="35" y="26" class="legend-text">TV Show</text>
+                <circle cx="130" cy="20" r="5" fill="#3297d6"></circle>
+                <text x="145" y="26" class="legend-text">Cast</text>
+                <line x1="210" y1="20" x2="230" y2="20" stroke="gray" stroke-width="2"></line>
+                <text x="240" y="26" class="legend-text">Acted in</text>
+            </svg>
+        </div>
+        <div id="search-box"> 
+            <div style="display: inline-block;">
+              <input type="text" id="search" name="search" placeholder="Search TV Show or Cast" list="search-options">
+              <datalist id="search-options"></datalist>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div id="visualization">
+                <svg width="1200" height="1000"></svg> 
+            </div>
+            <div id="info-card" class="info-card">
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
